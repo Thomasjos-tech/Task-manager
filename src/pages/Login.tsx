@@ -686,7 +686,7 @@ import { toast } from "sonner";
 import { useStore } from "@/lib/store";
 import type { Role, User } from "@/lib/store";
 
-const BASE_URL = "http://localhost:5000/api/auth";
+const BASE_URL = `${import.meta.env.VITE_API_URL}/auth`;
 
 // ✅ Convert backend → frontend (safe)
 const toStoreRole = (backendRole: string): Role => {

@@ -3138,7 +3138,7 @@ import {
   Bar,
 } from "recharts";
 
-const BASE = "http://localhost:5000/api";
+const BASE = `${import.meta.env.VITE_API_URL}/api`;
 
 const PROJECT_COLORS = [
   "#6366f1",
